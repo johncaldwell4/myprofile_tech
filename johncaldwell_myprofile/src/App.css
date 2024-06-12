@@ -1,10 +1,12 @@
-html, body {
+body {
   background-color:black;
-  margin: 0;
+  margin: 60px;
   padding: 0;
   color: white;
   font-family: Avantgarde, URW Gothic L, sans-serif;
-  border: 1px solid white;
+  height: 300px;
+  width: 100%;
+  
 }
 
 h1 {
@@ -12,7 +14,30 @@ h1 {
 }
 
 .headerTitle {
+  width: 100%;
   color:white;
-  margin: 50px auto;
-  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  margin: 100px auto;
+  justify-content: space-around;
+}
+
+.title {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#quotes {
+  font-style: italic;
+}
+.title-img {
+  margin: 0px 30px 0px 10px;
+  
+}
+
+.mySelfImage {
+  
+  border-radius: 50%;
 }
