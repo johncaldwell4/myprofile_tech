@@ -33,11 +33,78 @@ h1 {
   font-style: italic;
 }
 .title-img {
-  margin: 0px 30px 0px 10px;
+  margin: 0px 60px 0px 0px;
   
 }
 
 .mySelfImage {
   
   border-radius: 50%;
+  height: 500px;
+  width: 500px;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
+}
+
+#summary{
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  
+}
+
+#summary-doc {
+  margin-top: 15px;
+}
+
+.subTitle {
+  font-size: 25px;
+  align-items: center;
+  border: 15px solid green;
+  
+}
+
+#summary-doc p {
+    text-indent:50px;
+ }
+
+
+
+.skills {
+  height: 300px;
+  width: 100%;
+  margin-top: 100px;
+  font-size: 25px;
+  width: 70%;
+  border: 15px solid yellow;
+  
+  
+}
+
+.skill-title {
+  width: 99%;
+  text-align: center;
+  
+}
+
+.skill-row {
+  display: flex;
+  height: 250px;
+  border: 10px solid red;
+}
+
+.skill-column {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  text-align: center;
+  border: 5px solid blue;
 }
