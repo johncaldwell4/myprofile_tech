@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import MyTable from "./Mytable";
 
 
 
@@ -13,7 +13,7 @@ function Contents() {
               skills: [
                 <li>Operating Systems: Windows, macOS, Linux</li>,
                 <li>Office Suites: Microsoft Office (Word, Excel, PowerPoint), Google Workspace (Docs, Sheets, Slides)</li>,
-                <li>Internet Browsing: Efficient use of web browsers (Chrome, Firefox, Safari)"</li>,
+                <li>Internet Browsing: Efficient use of web browsers (Chrome, Firefox, Safari)</li>,
                 <li>Email Management: Using email clients (Outlook, Gmail)</li>,
               ]
             },
@@ -40,7 +40,7 @@ function Contents() {
               ]
             },
             {
-              category: "Specialized Computer Skills",
+              category: <li>Specialized Computer Skills</li>,
               skills: [
                 <li>Graphic Design: Knowledge in Adobe Creative Suite (Photoshop, Illustrator, InDesign)</li>,
                 <li>3D Modeling: Using software like Blender, AutoCAD</li>,
@@ -108,6 +108,14 @@ function Contents() {
                     <div className="skill-column">
                         
                         <ul>
+                            <li>
+                            
+                               <a href="#" onClick={(e) => {
+                                e.preventDefault();
+                               }}>{computerSkills[skill]["category"]}</a> 
+                            
+
+                            </li>
 
                         </ul>
                         
@@ -123,13 +131,19 @@ function Contents() {
                         <div className="employeeHistory-column">
                         
                             <ul>                  
-                                
+                                <li>DizerCorp - Contractor for Progressive IT Service Desk Specialist</li>
+                                <li>Dimex Corporation </li>
+                                <li>Mountain River Physical Therapy </li>
+                                <li>Kinetic Networking</li>
+                                <li>Simonton Windows</li>
+                                <li>Washington State Community College</li>
+
                             </ul>
                         
                         </div>
                         <div className="employeeHistory-column">
                             <ol>
-                           
+                                
                             </ol>
                         </div>
                     </div>

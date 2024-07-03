@@ -14,7 +14,7 @@ h1 {
 }
 
 .headerTitle {
-  width: 100%;
+  width: 85%;
   color:white;
   display: flex;
   align-items: center;
@@ -117,5 +117,8 @@ h1 {
   flex-direction: column;
   width: 50%;
   text-align: center;
- 
+}
+
+.employeeHistory-column li {
+  list-style-type: none;
 }
