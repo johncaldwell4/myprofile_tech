@@ -13,6 +13,12 @@ h1 {
   text-align: center;
 }
 
+a:link, a:visited {
+  color:chocolate;
+  text-decoration: none;
+
+}
+
 .headerTitle {
   width: 85%;
   color:white;

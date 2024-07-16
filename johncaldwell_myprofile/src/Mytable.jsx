@@ -23,7 +23,7 @@ const MyTable = () => {
           </tr>
         </thead>
         <tbody>
-          
+          {data.map((row, index) => (
             <tr key={index}>
               <td>
                 <a
@@ -33,7 +33,7 @@ const MyTable = () => {
                     handleLinkClick(row.items);
                   }}
                 >
-                  
+                  {row.link}
                 </a>
               </td>
             </tr>
