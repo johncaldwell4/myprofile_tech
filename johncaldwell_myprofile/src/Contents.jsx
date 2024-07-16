@@ -108,6 +108,7 @@ function Contents() {
                     <div className="skill-column">
                         
                         <ul>
+                          {computerSkills.map(())}
                             <li>
                             
                                <a href="#" onClick={(e) => {
