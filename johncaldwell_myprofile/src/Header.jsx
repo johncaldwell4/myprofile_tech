@@ -5,6 +5,8 @@ function Header() {
         "Things work out best for those who make the best of how things work out. ~John Wooden",
         "To live a creative life, we must lose our fear of being wrong. ~Anonymous",
         "If you are not willing to risk the usual you will have to settle for the ordinary. ~Jim Rohn"]
+
+    
     return (
     <>
         <div className="headerTitle">

@@ -11,6 +11,11 @@ body {
 
 h1 {
   text-align: center;
+  color: #4E4FEB;
+}
+
+h2 {
+  color: #4E4FEB;
 }
 
 a:link, a:visited {
@@ -32,6 +37,7 @@ a:link, a:visited {
   display:flex;
   flex-direction: column;
   align-items: center;
+  
 
 }
 
@@ -51,18 +57,21 @@ a:link, a:visited {
 }
 
 .container {
+  position: relative;
   display: flex;
   width: 95%;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* border: solid yellow 5px; */
 }
 
 #summary{
   display: flex;
   flex-wrap: wrap;
   width: 70%;
+  
   
 }
 
@@ -73,6 +82,8 @@ a:link, a:visited {
 .subTitle {
   font-size: 25px;
   align-items: center;
+  color: #4E4FEB;
+  
    
 }
 
@@ -91,15 +102,13 @@ a:link, a:visited {
   margin-top: 100px;
   font-size: 25px;
   width: 70%;
-  
-  
-  
+    
 }
 
 .skill-title {
   width: 99%;
   text-align: center;
-  
+      
 }
 
 .skill-row {
@@ -128,3 +137,50 @@ a:link, a:visited {
 .employeeHistory-column li {
   list-style-type: none;
 }
+
+.skillContainer {
+  position: absolute;
+  top: 50px;
+  display: inline-block;
+  width: 50px;
+  height: 150px;
+  /* border: solid blue 5px; */
+  justify-content: center;
+  width: 50%;
+
+}
+
+.skillCategory {
+  /* border: red solid 5px; */
+  left: 250px;
+  height: 500px;
+  width: 30%;
+  text-align: center;
+}
+
+.skillList {
+  /* border: rgb(187, 255, 0) solid 5px; */
+  right: 250px;
+  height: 500px;
+  width: 45%;
+  text-align: center;
+  
+}
+
+.skillCategory ul {
+  list-style-type: none;
+
+}
+
+.skillList ul {
+  list-style-type: none;
+  font-size: 20px;
+  
+}
+
+.btnSkills {
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 20px;
+ }
