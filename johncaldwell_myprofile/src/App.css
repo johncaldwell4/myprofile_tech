@@ -11,17 +11,27 @@ body {
 
 h1 {
   text-align: center;
-  color: #4E4FEB;
+  color: #068FFF;
 }
 
 h2 {
-  color: #4E4FEB;
+  color: #068FFF;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+hr {
+  background-color: #4E4FEB;
+  height: 5px;
+  border: 0;
 }
 
 a:link, a:visited {
-  color:chocolate;
+  color:white;
   text-decoration: none;
-
 }
 
 .headerTitle {
@@ -37,8 +47,6 @@ a:link, a:visited {
   display:flex;
   flex-direction: column;
   align-items: center;
-  
-
 }
 
 #quotes {
@@ -46,11 +54,9 @@ a:link, a:visited {
 }
 .title-img {
   margin: 0px 60px 0px 0px;
-  
 }
 
 .mySelfImage {
-  
   border-radius: 50%;
   height: 500px;
   width: 500px;
@@ -59,7 +65,7 @@ a:link, a:visited {
 .container {
   position: relative;
   display: flex;
-  width: 95%;
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -71,12 +77,12 @@ a:link, a:visited {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
-  
-  
+    
 }
 
 #summary-doc {
   margin-top: 15px;
+  width: 60%;
 }
 
 .subTitle {
@@ -184,3 +190,76 @@ a:link, a:visited {
   border: none;
   font-size: 20px;
  }
+
+ .educationContainer {
+  position: absolute;
+  top: 350px;
+  width: 50%;
+  /* border: solid green 5px; */
+}
+
+ .schoolCollege {
+    color: white;
+ }
+
+ .project {
+    border: rgb(250, 249, 250) solid 2px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    flex-direction: row;
+        
+ }
+
+ .projectContainer {
+  position: absolute;
+  top: 1100px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* border: solid green 5px; */
+  
+}
+
+.project1 {
+  top: 100px;
+}
+
+.project2 {
+  top: 100px;
+  left: 350px;
+}
+
+.project3 {
+  top: 100px;
+  right: 0px;
+}
+
+.project4 {
+  top: 400px;
+}
+
+.project5 {
+  top: 400px;
+  left: 350px;
+}
+
+.project6 {
+  top: 400px;
+  right: 0px;
+}
+
+.project7 {
+  top: 700px;
+}
+
+.project8 {
+  top: 700px;
+  left: 350px;
+}
+
+.project9 {
+  top: 700px;
+  right: 0px;
+}
+

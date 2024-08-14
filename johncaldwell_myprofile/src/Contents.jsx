@@ -6,8 +6,8 @@ function Contents() {
   return (
     <>
       <div className="container">
-        <div id="summary">
-          <span className="subTitle">Summary</span>
+        
+          <h2>Summary</h2>
 
             <div id="summary-doc">
                 <p>
@@ -29,7 +29,7 @@ function Contents() {
               </div>
                           
         </div>
-      </div>
+      
 
     </>
     

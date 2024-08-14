@@ -30,7 +30,7 @@ const links = [
   "Virtualization: Using tools like VMware, VirtualBox",
   "Project Management Tools: Using tools like JIRA, Trello, Asana",
   "Customer Relationship Management (CRM): Using software like Salesforce, HubSpot",
-  "Enterprise Resource Planning (ERP): Using software like SAP, Oracle ERP",
+  "Enterprise Resource Planning (ERP): Using software like SAP, Oracle ERP"
   ] },
   { id: 5, name: "Soft Skills Related to Computer Usage", content: [
   "Technical Communication: Ability to explain technical concepts clearly",
@@ -43,43 +43,44 @@ const links = [
   "Healthcare IT: Knowledge of Electronic Health Records (EHR) systems",
   "Financial Software: Using tools like QuickBooks, SAP for financial management",
   "Engineering Software: Proficiency in CAD software, MATLAB",
-  "Education Technology: Using Learning Management Systems (LMS) like Moodle, Blackboard",
-  ] },
+  "Education Technology: Using Learning Management Systems (LMS) like Moodle, Blackboard"
+  ] }
 ];
 
 function TwoColumnLayout() {
-  const [selectedContent, setSelectedContent] = useState('Click a link to see the content');
+  const [selectedContent, setSelectedContent] = useState([]);
 
   const handleLinkClick = (content) => {
     setSelectedContent(content);
   };
 
-  return (
-    <div className='container'>
-      <div className='skillContainer skillCategory'>
-        <h2>Skills</h2>
+return (
+  
+<div className='container'>
+    <div className='skillContainer skillCategory'>
+      <h2>Skills</h2>
         <ul>
           {links.map(link => (
-            <li key={link.id}>
-              <button className='btnSkills' onClick={(e) => { e.preventDefault(); handleLinkClick(link.content); }}>
-                {link.name}
-              </button>
-            </li>
-          ))}
+              <li key={link.id}>
+                <button className='btnSkills' onClick={(e) => { 
+                  e.preventDefault(); 
+                  handleLinkClick(link.content); 
+                  }}>
+                    {link.name}
+                </button>
+              </li>
+            ))}
         </ul>
-      </div>
-      <div className='skillContainer skillList'>
-        <h2>Content</h2>
-          <ul>
-          {selectedContent.map((item, index) => (
-            <li key={index}>
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
     </div>
-  );
-}
+    <div className='skillContainer skillList'>
+      <h2>Content</h2>
+        <ul>
+          {selectedContent.map((item, index) => (<li key={index}>{item}</li>))}
+            
+        </ul>
+    </div>        
+</div>
+
+)}
 
 export default TwoColumnLayout
