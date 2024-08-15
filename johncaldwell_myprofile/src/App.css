@@ -203,7 +203,7 @@ a:link, a:visited {
  }
 
  .project {
-    border: rgb(250, 249, 250) solid 2px;
+    /* border: rgb(250, 249, 250) solid 2px; */
     width: 250px;
     height: 250px;
     position: absolute;

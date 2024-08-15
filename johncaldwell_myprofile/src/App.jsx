@@ -6,6 +6,7 @@ import Contents from './Contents';
 import TwoColumnLayout from './Twocolumnlayout';
 import Education from '../Education';
 import Project from './Project';
+// import Footer from './Footer'
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <TwoColumnLayout />
       <Education />
       <Project /> 
+      {/* <Footer /> */}
 
     </>
   )
